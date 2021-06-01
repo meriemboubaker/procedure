@@ -1,4 +1,4 @@
-PROCEDURE Dot_product(VAR ps:FLOAT,n : INTEGER , v1,v2 : ARRAY[n])
+PROCEDURE Dot_product(VAR ps:FLOAT,n : INTEGER , v1,v2 : ARRAY_OF FLOAT[n])
 VAR
  i:INTEGER:= 0;    
 BEGIN
@@ -29,7 +29,7 @@ BEGIN
   ELSE
    WRITE("is not orthogonal")
   END
-FUNCTION Dot_product(n:INTEGER ,v1,v2 : ARRAY[n]) : FLOAT
+FUNCTION Dot_product(n:INTEGER ,v1,v2 : ARRAYOF_FLOAT[n]) : FLOAT
 VAR
  i:INTEGER:= 0;   
 BEGIN
