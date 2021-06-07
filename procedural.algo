@@ -3,7 +3,7 @@ VAR
  i:INTEGER:= 0;    
 BEGIN
  ps:= 0;
- FOR i FROM 0 TO n-1 DO
+ FOR i FROM 0 TO n-1 STEP 1 DO
   ps := ps + v1[i] * v2[i]
  END_FOR
 END
@@ -48,7 +48,7 @@ VAR
 BEGIN
    Write("give length of array"); 
    Read(n);
-   FOR i FROM 0 to n DO
+   FOR i FROM 0 to n-1 DO
     Write("Give array1 element");
     Read(v1[i]);
     Write("Give array2 element");
